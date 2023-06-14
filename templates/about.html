@@ -17,7 +17,7 @@
         <div class="row featurette">
 
             {% if loop.index % 2 != 0 %}
-
+            <!-- om talet är udda, visa medlem tillhöger och text till vänster -->
                 <div class="col-md-7">
                     <h3><a href="/about/{{ member.url }}">{{ loop.index }}. {{ member.name }}</a></h3>
                     <p>{{ member.description }}</p>
@@ -27,7 +27,7 @@
                 </div>
             
             {% else %}
-
+            <!-- annars visa text till vänster och medlemsbilden till höger -->
                 <div class="col-md-5">
                     <img src="{{ member.image_source }}" alt="" class="featurette-image image-responsive">
                 </div>
